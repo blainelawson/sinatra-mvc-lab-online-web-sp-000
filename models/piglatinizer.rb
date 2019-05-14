@@ -29,7 +29,7 @@ class PigLatinizer
   def first_part(word)
     first_group = []
 
-    (0..find_first_vowel_index-1).each do |i|
+    (0..find_first_vowel_index(word)-1).each do |i|
       first_group << word[i]
     end
     binding.pry
