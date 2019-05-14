@@ -13,7 +13,7 @@ class PigLatinizer
       result = word.gsub(first_group), "")
       result = result + first_group
       result = result + ending(word)
-    end
+    end.join(" ")
 
   end
 
