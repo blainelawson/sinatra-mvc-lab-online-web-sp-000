@@ -40,7 +40,7 @@ binding.pry
         if letter != consonant
           part_1 << letter
         else
-          break
+          exit
         end
       end
       part_1.join("")
