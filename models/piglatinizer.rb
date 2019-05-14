@@ -15,7 +15,7 @@ class PigLatinizer
       result = result + first_group
       result = result + ending(word)
     end.join(" ")
-
+binding.pry
   end
 
   def ending(word)
