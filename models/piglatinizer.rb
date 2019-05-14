@@ -24,7 +24,7 @@ class PigLatinizer
       "ay"
     end
   end
-  
+
   def is_consonant?(letter)
     letter.scan(/[^aeouiAEOUI]/).empty
   end
