@@ -11,7 +11,7 @@ class PigLatinizer
       binding.pry
       part_1 = first_part(word).join("")
       result = word.gsub(part_1, "")
-
+    end
 
   end
 
