@@ -20,7 +20,7 @@ class PigLatinizer
   end
 
   def first_part(word)
-    if begins_with_vowel? 
+    if begins_with_vowel?
       part_1 = word
     else
       consonant = first_consonant(word)
