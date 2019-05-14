@@ -31,6 +31,7 @@ class PigLatinizer
           break
         end
       end
+      part_1.join("")
     end
     part_1.join("")
   end
