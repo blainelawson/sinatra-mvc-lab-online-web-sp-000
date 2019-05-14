@@ -9,5 +9,5 @@ class PigLatinizer
     words_array = text.split(" ")
     binding.pry
   end
-  
+
 end
