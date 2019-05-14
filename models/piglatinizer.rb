@@ -28,12 +28,14 @@ class PigLatinizer
 
     part_1
     end
-    part_1
+
+  def 
 end
 
 # I have to:
 # split phrase into individual words
 # find first consonant
 # cut first part of word through the first consonant from string
+# removed first part and add to the end with 'ay'
 # add cut part to end of word with 'ay'
 # combine words together again
