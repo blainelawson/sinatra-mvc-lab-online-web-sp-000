@@ -14,16 +14,16 @@ class PigLatinizer
 
   end
 
-  def first_consonant(word)
-    consonant = word.scan(/[^aeouiAEOUI]/).first
+  def is_consonant?(letter)
+    letter.scan(/[^aeouiAEOUI]/).empty
   end
 
   def first_part(word)
     if begins_with_vowel?(word)
       part_1 = word
     else
-      consonant = first_consonant(word)
-      part_1 = []
+      word.split('').each do |letter|
+        part_1 = []
       word.split('').each do |letter|
         if letter != consonant
           part_1 << letter
