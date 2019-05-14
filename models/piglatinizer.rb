@@ -10,7 +10,7 @@ class PigLatinizer
     words_array = text.split(" ")
     words_array.map do |word|
       # binding.pry
-      result = word.gsub(first_group), "")
+      result = word.gsub(first_group, "")
       result = result + first_group
       result = result + ending(word)
     end.join(" ")
