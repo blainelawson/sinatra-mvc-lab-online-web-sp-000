@@ -8,6 +8,7 @@ class PigLatinizer
   def latinize_words
     first_group = first_part(word)
     words_array = text.split(" ")
+    binding.pry
     words_array.map do |word|
       # binding.pry
       result = word.gsub(first_group, "")
