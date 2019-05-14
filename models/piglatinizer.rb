@@ -11,24 +11,14 @@ class PigLatinizer
 
     words_array.map do |word|
       if find_first_vowel_index(word) == 0
-        binding.pry
         result = word + "way"
       else
-        binding.pry
         first_group = first_part(word)
         result = word.gsub(first_group, "")
         result = result + first_group
         result = result + "ay"
       end
     end.join(" ")
-  end
-
-  def ending(word)
-    if begins_with_vowel?(word)
-      "way"
-    else
-      "ay"
-    end
   end
 
   def is_consonant?(letter)
