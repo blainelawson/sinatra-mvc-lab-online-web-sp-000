@@ -16,7 +16,7 @@ class PigLatinizer
         first_group = first_part(word)
         result = word.gsub(first_group, "")
         result = result + first_group
-        result = result + ending(word)
+        result = result + "ay"
         binding.pry
       end
     end.join(" ")
