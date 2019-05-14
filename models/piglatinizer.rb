@@ -33,6 +33,9 @@ class PigLatinizer
     part_1
   end
 
+  def begins_with_vowel?(word)
+    !word.split('').first.scan(/[aeouiAEOUI]/).empty?
+  end
 end
 
 # I have to:
