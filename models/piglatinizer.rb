@@ -6,10 +6,8 @@ class PigLatinizer
   end
 
   def latinize_words
-    binding.pry
-
     words_array = text.split(" ")
-    binding.pry
+
     words_array.map do |word|
       binding.pry
       first_group = first_part(word)
