@@ -46,7 +46,9 @@ class PigLatinizer
   end
 
   def find_first_vowel_index(word)
-    word.scan(/[aeouiAEOUI]/).first.index
+    word.split("").find.with_index do |letter, i|
+      return i if VOWELS.include?(letter)
+    end
   end
 
   def begins_with_vowel?(word)
