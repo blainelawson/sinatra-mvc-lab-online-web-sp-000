@@ -22,8 +22,7 @@ class PigLatinizer
     if begins_with_vowel?(word)
       part_1 = word
     else
-      word.split('').each do |letter|
-        part_1 = []
+      part_1 = []
       word.split('').each do |letter|
         if letter != consonant
           part_1 << letter
