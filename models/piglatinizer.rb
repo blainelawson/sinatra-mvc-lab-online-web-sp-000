@@ -7,7 +7,7 @@ class PigLatinizer
   end
 
   def latinize_words
-    words_array = @text.split(" ")
+    words_array = text.split(" ")
 
     words_array.map do |word|
       if find_first_vowel_index(word) == 0
