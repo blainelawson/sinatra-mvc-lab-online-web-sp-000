@@ -13,18 +13,12 @@ class PigLatinizer
       if find_first_vowel_index(word) == 0
         result = word + "way"
       else
-        # binding.pry
         first_group = first_part(word)
         result = word.gsub(first_group, "")
         result = result + first_group
         result = result + "ay"
-        # binding.pry
       end
     end.join(" ")
-  end
-
-  def is_consonant?(letter)
-    letter.scan(/[^aeouiAEOUI]/).empty
   end
 
   def first_part(word)
@@ -33,7 +27,6 @@ class PigLatinizer
     (0..find_first_vowel_index(word)-1).each do |i|
       first_group << word[i]
     end
-    # binding.pry
     first_group.join("")
   end
 
@@ -41,10 +34,6 @@ class PigLatinizer
     word.split("").each.with_index do |letter, i|
       return i if VOWELS.include?(letter.downcase)
     end
-  end
-
-  def begins_with_vowel?(word)
-    !word.split('').first.scan(/[aeouiAEOUI]/).empty?
   end
 end
 
