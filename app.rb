@@ -6,6 +6,8 @@ class App < Sinatra::Base
   end
 
   post '/piglatinized' do
+    @text = params[:string]
+
     erb :piglatinized
   end
 end
