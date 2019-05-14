@@ -26,6 +26,7 @@ class PigLatinizer
         break
       end
     end
+    part_1
 end
 
 # I have to:
