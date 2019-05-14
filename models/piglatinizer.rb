@@ -13,7 +13,7 @@ class PigLatinizer
       if find_first_vowel_index(word) == 0
         result = word + "way"
       else
-        binding.pry
+        # binding.pry
         first_group = first_part(word)
         result = word.gsub(first_group, "")
         result = result + first_group
