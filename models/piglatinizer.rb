@@ -10,6 +10,7 @@ class PigLatinizer
 
     words_array.map do |word|
       # binding.pry
+      if find_first_vowel
       first_group = first_part(word)
       result = word.gsub(first_group, "")
       result = result + first_group
@@ -48,7 +49,7 @@ binding.pry
     part_1
   end
 
-  def find_first_vowel(word)
+  def find_first_vowel_index(word)
     word.split('').scan(/[aeouiAEOUI]/).first.index
   end
 
