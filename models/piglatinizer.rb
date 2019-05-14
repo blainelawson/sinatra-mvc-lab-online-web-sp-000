@@ -9,7 +9,7 @@ class PigLatinizer
     words_array = text.split(" ")
     words_array.map do |word|
       binding.pry
-      result = word.gsub(first_part(word), "")
+      "#{word.gsub(first_part(word), "")}#{middle_part(word)}#{last_part(word)}"
     end
 
   end
