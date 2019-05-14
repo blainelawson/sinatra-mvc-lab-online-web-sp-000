@@ -8,13 +8,13 @@ class PigLatinizer
   def latinize_words
     words_array = text.split(" ")
     words_array.each do |word|
-      
-    
+
+
   end
 
   def first_consonant(word)
     consonant = word.scan(/[^aeouiAEOUI]/).first
-    
+
 
 end
 
