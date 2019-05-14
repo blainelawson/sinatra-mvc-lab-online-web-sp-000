@@ -7,6 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize(words = @text)
+    binding.pry
     words_array = text.split(" ")
 
     words_array.map do |word|
