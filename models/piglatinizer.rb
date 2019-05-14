@@ -33,7 +33,7 @@ class PigLatinizer
       first_group << word[i]
     end
     binding.pry
-    first_group
+    first_group.join("")
   end
 
   def find_first_vowel_index(word)
