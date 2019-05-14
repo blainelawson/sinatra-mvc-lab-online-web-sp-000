@@ -7,7 +7,9 @@ class PigLatinizer
 
   def latinize_words
     words_array = text.split(" ")
-    words_array.each do |word|
+    words_array.map do |word|
+      part_1 = first_part(word).join("")
+      word.gsub
 
 
   end
@@ -29,7 +31,6 @@ class PigLatinizer
     part_1
     end
 
-  def
 end
 
 # I have to:
