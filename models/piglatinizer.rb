@@ -10,12 +10,15 @@ class PigLatinizer
 
     words_array.map do |word|
       # binding.pry
-      if find_first_vowel
-      first_group = first_part(word)
-      result = word.gsub(first_group, "")
-      result = result + first_group
-      result = result + ending(word)
-      binding.pry
+      if find_first_vowel_index(word) == 0
+        result = word + "way"
+      else
+        first_group = first_part(word)
+        result = word.gsub(first_group, "")
+        result = result + first_group
+        result = result + ending(word)
+        binding.pry
+      end
     end.join(" ")
 binding.pry
   end
