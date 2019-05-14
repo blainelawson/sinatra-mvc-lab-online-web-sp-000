@@ -40,7 +40,7 @@ binding.pry
         if letter != consonant
           part_1 << letter
         else
-          exit
+          
         end
       end
       part_1.join("")
@@ -48,6 +48,10 @@ binding.pry
     part_1
   end
 
+  def find_first_vowel(word)
+    word.split('').scan(/[aeouiAEOUI]/).first.index
+  end
+  
   def begins_with_vowel?(word)
     !word.split('').first.scan(/[aeouiAEOUI]/).empty?
   end
