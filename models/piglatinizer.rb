@@ -19,7 +19,6 @@ class PigLatinizer
         result = result + "ay"
       end
     end.join(" ")
-binding.pry
   end
 
   def ending(word)
