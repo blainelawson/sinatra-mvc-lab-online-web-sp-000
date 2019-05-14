@@ -6,6 +6,7 @@ class PigLatinizer
   end
 
   def latinize_words
+    binding.pry
     first_group = first_part(word)
     words_array = text.split(" ")
     binding.pry
