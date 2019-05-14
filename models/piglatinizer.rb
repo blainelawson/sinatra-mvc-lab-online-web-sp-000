@@ -37,17 +37,12 @@ binding.pry
 
   def first_part(word)
     first_group = []
+    
     (0..find_first_vowel_index-1).each do |i|
-      word.split('').each do |letter|
-        if letter != consonant
-          part_1 << letter
-        else
-
-        end
-      end
-      part_1.join("")
+      first_group << word[i]
     end
-    part_1
+    binding.pry
+    first_group
   end
 
   def find_first_vowel_index(word)
