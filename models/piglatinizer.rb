@@ -25,6 +25,7 @@ class PigLatinizer
       else
         break
       end
+    end
 end
 
 # I have to:
