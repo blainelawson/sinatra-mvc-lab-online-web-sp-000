@@ -2,8 +2,8 @@ class PigLatinizer
   VOWELS = ["a", "e", "i", "o", "u"]
   attr_reader :text
 
-  def initialize
-    @text = @user_phrase
+  def initialize(user_phrase)
+    @text = user_phrase
   end
 
   def piglatinize
