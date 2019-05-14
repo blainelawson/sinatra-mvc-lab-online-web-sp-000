@@ -29,7 +29,7 @@ class PigLatinizer
     part_1
     end
 
-  def 
+  def
 end
 
 # I have to:
