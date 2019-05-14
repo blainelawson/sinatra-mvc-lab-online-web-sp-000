@@ -8,7 +8,7 @@ class App < Sinatra::Base
   post '/piglatinize' do
     # binding.pry
     @text = PigLatinizer.new
-    @latinized_text = @text.piglatinize
+    @latinized_text = @text.piglatinize(params[:user_phrase])
     erb :piglatinize
   end
 end
