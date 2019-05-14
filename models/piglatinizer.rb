@@ -14,7 +14,7 @@ class PigLatinizer
 
   def first_consonant(word)
     consonant = word.scan(/[^aeouiAEOUI]/).first
-
+  end
 
 end
 
