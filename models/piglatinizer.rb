@@ -3,6 +3,7 @@ class PigLatinizer
   attr_reader :text
 
   def initialize
+    binding.pry
     @text = @user_phrase
   end
 
