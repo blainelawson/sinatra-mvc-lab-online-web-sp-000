@@ -20,16 +20,19 @@ class PigLatinizer
   end
 
   def first_part(word)
-    consonant = first_consonant(word)
-    part_1 = []
-    word.split('').each do |letter|
-      if letter != consonant
-        part_1 << letter
-      else
-        break
+    if begins_with_vowel? 
+      part_1 = word
+    else
+      consonant = first_consonant(word)
+      part_1 = []
+      word.split('').each do |letter|
+        if letter != consonant
+          part_1 << letter
+        else
+          break
+        end
       end
     end
-
     part_1
   end
 
