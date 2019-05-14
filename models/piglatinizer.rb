@@ -47,7 +47,7 @@ class PigLatinizer
 
   def find_first_vowel_index(word)
     word.split("").each.with_index do |letter, i|
-      return i if VOWELS.include?(letter)
+      return i if VOWELS.include?(letter.downcase)
     end
   end
 
