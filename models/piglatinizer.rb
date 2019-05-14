@@ -1,4 +1,5 @@
 class PigLatinizer
+  VOWELS = ["a", "e", "i", "o", "u"]
   attr_reader :text
 
   def initialize(text)
@@ -45,7 +46,7 @@ class PigLatinizer
   end
 
   def find_first_vowel_index(word)
-    word.split('').scan(/[aeouiAEOUI]/).first.index
+    word.scan(/[aeouiAEOUI]/).first.index
   end
 
   def begins_with_vowel?(word)
@@ -60,3 +61,4 @@ end
 # removed first part and add to the end with 'ay'
 # add cut part to end of word with 'ay'
 # combine words together again
+
