@@ -36,10 +36,8 @@ binding.pry
   end
 
   def first_part(word)
-    if begins_with_vowel?(word)
-      part_1 = word
-    else
-      part_1 = []
+    first_group = []
+    (0..find_first_vowel_index-1).each do |i|
       word.split('').each do |letter|
         if letter != consonant
           part_1 << letter
