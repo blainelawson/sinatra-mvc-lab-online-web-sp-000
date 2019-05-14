@@ -9,7 +9,7 @@ class PigLatinizer
     words_array = text.split(" ")
 
     words_array.map do |word|
-      # binding.pry
+      binding.pry
       if find_first_vowel_index(word) == 0
         result = word + "way"
       else
