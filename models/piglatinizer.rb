@@ -6,10 +6,12 @@ class PigLatinizer
   end
 
   def latinize_words
+    first_group = first_part(word)
     words_array = text.split(" ")
     words_array.map do |word|
       binding.pry
-      result = "#{word.gsub(first_part(word), "")}#{middle_part(word)}#{last_part(word)}"
+      result = word.gsub(first_group), "")
+      result = result + first_group
     end
 
   end
