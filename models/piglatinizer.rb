@@ -33,7 +33,7 @@ class PigLatinizer
       end
       part_1.join("")
     end
-    part_1.join("")
+    part_1
   end
 
   def begins_with_vowel?(word)
