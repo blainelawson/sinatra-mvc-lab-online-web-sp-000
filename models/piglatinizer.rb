@@ -32,7 +32,7 @@ class PigLatinizer
     (0..find_first_vowel_index(word)-1).each do |i|
       first_group << word[i]
     end
-    binding.pry
+    # binding.pry
     first_group.join("")
   end
 
