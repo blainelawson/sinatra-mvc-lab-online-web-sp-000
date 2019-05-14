@@ -17,6 +17,14 @@ class PigLatinizer
 
   end
 
+  def ending(word)
+    if begins_with_vowel?(word)
+      "way"
+    else
+      "ay"
+    end
+  end
+  
   def is_consonant?(letter)
     letter.scan(/[^aeouiAEOUI]/).empty
   end
