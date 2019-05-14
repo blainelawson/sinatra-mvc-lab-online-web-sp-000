@@ -16,6 +16,15 @@ class PigLatinizer
     consonant = word.scan(/[^aeouiAEOUI]/).first
   end
 
+  def first_part(word)
+    consonant = first_consonant(word)
+    part_1 = []
+    word.split('').each do |letter|
+      if letter != consonant
+        part_1 << letter
+      else
+        break
+      end
 end
 
 # I have to:
