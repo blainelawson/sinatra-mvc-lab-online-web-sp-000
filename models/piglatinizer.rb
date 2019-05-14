@@ -14,7 +14,7 @@ class PigLatinizer
         result = word + "way"
       else
         first_group = first_part(word)
-        result = word.gsub(first_group, "")
+        result = word.sub(first_group, "")
         result = result + first_group
         result = result + "ay"
       end
